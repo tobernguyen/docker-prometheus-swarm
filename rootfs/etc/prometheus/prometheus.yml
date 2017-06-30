@@ -57,7 +57,7 @@ scrape_configs:
     - names:
       - 'postgres-exporter'
       type: A
-      port: 9090
+      port: 9187
 
   - job_name: 'web-api-exporter'
     dns_sd_configs:
