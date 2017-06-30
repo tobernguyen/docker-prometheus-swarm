@@ -62,7 +62,7 @@ scrape_configs:
   - job_name: 'web-api-exporter'
     dns_sd_configs:
     - names:
-      - 'tasks.web-api-exporter'
+      - 'tasks.web'
       type: A
       port: 3001
 
