@@ -1,4 +1,4 @@
-FROM prom/prometheus:v1.6.3
+FROM prom/prometheus:v1.7.1
 
 ARG "version=0.1.0-dev"
 ARG "build_date=unknown"
@@ -6,11 +6,11 @@ ARG "commit_hash=unknown"
 ARG "vcs_url=unknown"
 ARG "vcs_branch=unknown"
 
-LABEL org.label-schema.vendor="Softonic" \
+LABEL org.label-schema.vendor="tobernguyen" \
     org.label-schema.name="Prometheus" \
     org.label-schema.description="Scrapes node-exporter, cadvisor, prometheus and swarm metrics (4999 port)." \
     org.label-schema.usage="/src/README.md" \
-    org.label-schema.url="https://github.com/bvis/docker-prometheus-swarm/blob/master/README.md" \
+    org.label-schema.url="https://github.com/tobernguyen/docker-prometheus-swarm/blob/master/README.md" \
     org.label-schema.vcs-url=$vcs_url \
     org.label-schema.vcs-branch=$vcs_branch \
     org.label-schema.vcs-ref=$commit_hash \
